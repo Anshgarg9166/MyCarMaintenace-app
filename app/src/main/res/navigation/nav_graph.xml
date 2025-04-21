@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.pkndegwa.mycarmaintenance.ui.fragments.SplashFragment"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.pkndegwa.mycarmaintenance.ui.fragments.OnboardingFragment"
+        tools:layout="@layout/fragment_onboarding" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.pkndegwa.mycarmaintenance.ui.fragments.HomeFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_vehicleRegistrationFragment"
+            app:destination="@id/vehicleRegistrationFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_vehicleDetailsFragment"
+            app:destination="@id/vehicleDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vehicleRegistrationFragment"
+        android:name="com.pkndegwa.mycarmaintenance.ui.fragments.VehicleRegistrationFragment"
+        android:label="{title}"
+        tools:layout="@layout/fragment_vehicle_registration">
+        <action
+            android:id="@+id/action_vehicleRegistrationFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="vehicle_id"
+            android:defaultValue="-1"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_vehicleRegistrationFragment_to_vehicleDetailsFragment"
+            app:destination="@id/vehicleDetailsFragment"
+            app:popUpTo="@id/vehicleDetailsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/vehicleDetailsFragment"
+        android:name="com.pkndegwa.mycarmaintenance.ui.fragments.VehicleDetailsFragment"
+        android:label="@string/vehicle_details"
+        tools:layout="@layout/fragment_vehicle_details">
+        <argument
+            android:name="vehicle_id"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_vehicleDetailsFragment_to_vehicleRegistrationFragment"
+            app:destination="@id/vehicleRegistrationFragment" />
+        <action
+            android:id="@+id/action_vehicleDetailsFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_vehicleDetailsFragment_to_addServiceFragment"
+            app:destination="@id/addServiceFragment" />
+        <action
+            android:id="@+id/action_vehicleDetailsFragment_to_viewImageFragment"
+            app:destination="@id/viewImageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addServiceFragment"
+        android:name="com.pkndegwa.mycarmaintenance.ui.fragments.AddServiceFragment"
+        android:label="{title}"
+        tools:layout="@layout/fragment_add_service">
+        <argument
+            android:name="vehicle_id"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_addServiceFragment_to_vehicleDetailsFragment"
+            app:destination="@id/vehicleDetailsFragment"
+            app:popUpTo="@id/vehicleDetailsFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="service_id"
+            android:defaultValue="-1"
+            app:argType="integer" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewImageFragment"
+        android:name="com.pkndegwa.mycarmaintenance.ui.fragments.ViewImageFragment"
+        android:label="{title}"
+        tools:layout="@layout/fragment_view_image">
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_viewImageFragment_to_vehicleDetailsFragment"
+            app:destination="@id/vehicleDetailsFragment"
+            app:popUpTo="@id/vehicleDetailsFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="imageUriString"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/remindersFragment"
+        android:name="com.pkndegwa.mycarmaintenance.ui.fragments.RemindersFragment"
+        android:label="Reminders"
+        tools:layout="@layout/fragment_reminders">
+        <action
+            android:id="@+id/action_remindersFragment_to_addReminderFragment"
+            app:destination="@id/addReminderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addReminderFragment"
+        android:name="com.pkndegwa.mycarmaintenance.ui.fragments.AddReminderFragment"
+        android:label="{title}"
+        tools:layout="@layout/fragment_add_reminder">
+        <action
+            android:id="@+id/action_addReminderFragment_to_remindersFragment"
+            app:destination="@id/remindersFragment"
+            app:popUpTo="@id/remindersFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="id"
+            android:defaultValue="-1"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.pkndegwa.mycarmaintenance.ui.fragments.NotesFragment"
+        android:label="Notes"
+        tools:layout="@layout/fragment_notes">
+        <action
+            android:id="@+id/action_notesFragment_to_addNoteFragment"
+            app:destination="@id/addNoteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNoteFragment"
+        android:name="com.pkndegwa.mycarmaintenance.ui.fragments.AddNoteFragment"
+        android:label="{title}"
+        tools:layout="@layout/fragment_add_note">
+        <action
+            android:id="@+id/action_addNoteFragment_to_notesFragment"
+            app:destination="@id/notesFragment"
+            app:popUpTo="@id/notesFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="id"
+            android:defaultValue="-1"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/moreFragment"
+        android:name="com.pkndegwa.mycarmaintenance.ui.fragments.MoreFragment"
+        android:label="More Options">
+        <action
+            android:id="@+id/action_moreFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/webViewFragment"
+        android:name="com.pkndegwa.mycarmaintenance.ui.fragments.WebViewFragment"
+        android:label="{title}"
+        tools:layout="@layout/fragment_web_view">
+        <action
+            android:id="@+id/action_webViewFragment_to_moreFragment"
+            app:destination="@id/moreFragment"
+            app:popUpTo="@id/moreFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="page"
+            app:argType="integer" />
+
+    </fragment>
+</navigation>

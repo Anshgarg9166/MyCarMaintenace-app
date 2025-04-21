@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">My Car Maintenance</string>
+    <string name="welcome">Welcome!</string>
+    <string name="car_tow_image">Image of car being towed</string>
+    <string name="add_vehicle_text">Add your first vehicle by clicking on the bottom right add button.</string>
+    <string name="add_vehicle_button">Add vehicle</string>
+    <string name="vehicle_type">Vehicle Type</string>
+    <string name="manufacturer">Manufacturer</string>
+    <string name="model">Model</string>
+    <string name="model_year">Model Year</string>
+    <string name="license_plate">License Plate</string>
+    <string name="fuel_type">Fuel Type</string>
+    <string name="mileage">Mileage</string>
+    <string name="save">Save</string>
+    <string name="register_vehicle">Register Vehicle</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="image_of_vehicle">Image of vehicle</string>
+    <string name="fuel">Fuel</string>
+    <string name="vehicle_name" formatted="false">%s %s</string>
+    <string name="formatted_vehicle_mileage">%,d</string>
+    <string name="new_vehicle_fab">Add new vehicle</string>
+    <string name="vehicle_details">Vehicle Details</string>
+    <string name="delete_vehicle_question">Are you sure you want to delete the vehicle?</string>
+    <string name="edit_fragment_title">Edit Vehicle Details</string>
+    <string name="add_new_service">Add New Service</string>
+    <string name="edit_service">Edit Service</string>
+    <string name="add_photo">Add photo</string>
+    <string name="add_vehicle_image">add vehicle image</string>
+    <string name="file_images">File images</string>
+    <string name="vehicles">Vehicles</string>
+    <string name="reminders">Reminders</string>
+    <string name="more">More</string>
+    <string name="new_reminder">Add New Reminder</string>
+    <string name="reminder_title">Reminder Text</string>
+    <string name="reminder_text_hint">Enter reminder text</string>
+    <string name="reminder_date">Reminder Date</string>
+    <string name="additional_text_title">Additional Text</string>
+    <string name="additional_text_hint">Enter additional text</string>
+    <string name="add_reminder_text">Tap + button to add a reminder</string>
+    <string name="edit_reminder">Edit Reminder</string>
+    <string name="add_new_note">Add New Note</string>
+    <string name="title">Title</string>
+    <string name="note">Note</string>
+    <string name="add_note_text">Tap + to add a note</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="share_with_friends">Share With Friends</string>
+
+    <!-- Vehicle type -->
+    <string name="car">Car</string>
+    <string name="motorcycle">Motorcycle</string>
+    <string name="bus">Bus</string>
+    <string name="truck">Truck</string>
+
+    <!-- Fuel type -->
+    <string name="diesel">Diesel</string>
+    <string name="petrol">Petrol</string>
+    <string name="electric">Electric</string>
+    <string name="liquefied_petroleum_gas">Liquefied Petroleum Gas (LPG)</string>
+    <string name="compressed_natural_gas">Compressed Natural Gas (CNG)</string>
+
+    <!-- Services -->
+    <string name="services">Services</string>
+    <string name="air_conditioning">Air Conditioning</string>
+    <string name="air_filter">Air Filter</string>
+    <string name="battery">Battery</string>
+    <string name="brake_pads">Brake Pads</string>
+    <string name="engine_oil_change">Engine Oil Change</string>
+    <string name="inspection">Inspection</string>
+    <string name="oil_filter">Oil Filter</string>
+    <string name="spark_plugs">Spark Plugs</string>
+    <string name="tire_change">Tire Change</string>
+    <string name="wheel_alignment">Wheel Alignment</string>
+    <string name="add_new">Add New</string>
+    <string name="current_mileage">Current Mileage</string>
+    <string name="next_service_mileage">Next Service Mileage</string>
+    <string name="total_cost">Total Cost</string>
+    <string name="formatted_total_cost">%,.2f</string>
+    <string name="amount">Amount</string>
+    <string name="service_date">Service Date</string>
+    <string name="next_service_date">Next Service Date</string>
+    <string name="notes">Notes</string>
+    <string name="expand_more_button">Press to expand and see details</string>
+    <string name="delete_service_question">Are you sure you want to delete the service?</string>
+    <string name="enter_service_dialog">Please enter the service type name</string>
+    <string name="service_type">Service type</string>
+    <string name="receipt">Receipt</string>
+    <string name="receipt_image_title">Receipt Image</string>
+
+    <!-- Notification -->
+    <string name="reminder_notification_channel_id" translatable="false">reminder_channel</string>
+    <string name="reminder_notification_channel_name" translatable="false">Reminders</string>
+    <string name="notification_title">Vehicle Maintenance</string>
+</resources>

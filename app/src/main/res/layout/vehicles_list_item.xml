@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vehicle_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/vehicle_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textAppearance="?attr/textAppearanceHeadline5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Suzuki Swift" />
+
+        <ImageView
+            android:id="@+id/vehicle_image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:contentDescription="@string/image_of_vehicle"
+            android:foreground="@drawable/image_shadow"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vehicle_name"
+            app:srcCompat="@drawable/generic_car" />
+
+        <TextView
+            android:id="@+id/vehicle_license"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            app:drawableTopCompat="@drawable/ic_baseline_license_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/vehicle_odometer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vehicle_image"
+            tools:text="KAA 123A" />
+
+        <TextView
+            android:id="@+id/vehicle_odometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            app:drawableTopCompat="@drawable/ic_baseline_mileage_24"
+            app:layout_constraintBottom_toBottomOf="@+id/vehicle_license"
+            app:layout_constraintEnd_toStartOf="@id/vehicle_model_year"
+            app:layout_constraintStart_toEndOf="@+id/vehicle_license"
+            app:layout_constraintTop_toTopOf="@+id/vehicle_license"
+            tools:text="65000" />
+
+        <TextView
+            android:id="@+id/vehicle_model_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            app:drawableTopCompat="@drawable/ic_baseline_mileage_24"
+            app:layout_constraintBottom_toBottomOf="@+id/vehicle_odometer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/vehicle_odometer"
+            app:layout_constraintTop_toTopOf="@+id/vehicle_odometer"
+            tools:text="2014" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

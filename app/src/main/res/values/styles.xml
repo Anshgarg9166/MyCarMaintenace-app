@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.MyCarMaintenance.TextView" parent="Widget.MaterialComponents.TextView">
+        <item name="minHeight">48dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAppearance">?attr/textAppearanceBody1</item>
+    </style>
+
+    <style name="Widget.MyCarMaintenance.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_marginStart">40dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="errorIconDrawable">@drawable/ic_baseline_error_outline_24</item>
+        <item name="helperTextTextAppearance">@style/TextAppearance.MaterialComponents.Subtitle1</item>
+    </style>
+
+    <style name="Widget.MyCarMaintenance.TextInputLayout2" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+    <style name="Widget.MyCarMaintenance.Chip.Filter" parent="Widget.MaterialComponents.Chip.Filter">
+        <item name="android:elevation">2dp</item>
+        <item name="android:shadowRadius">0.0</item>
+    </style>
+
+    <style name="Widget.MyCarMaintenance.ServiceTextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textAppearance">?attr/textAppearanceBody2</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <style name="Widget.MyCarMaintenance.TextInputLayout.FilledNoStrokes" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxCornerRadiusBottomEnd">4dp</item>
+        <item name="boxCornerRadiusBottomStart">4dp</item>
+        <item name="boxCornerRadiusTopEnd">4dp</item>
+        <item name="boxCornerRadiusTopStart">4dp</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="hintEnabled">false</item>
+        <item name="errorIconDrawable">@drawable/ic_baseline_error_outline_24</item>
+        <item name="helperTextTextAppearance">@style/TextAppearance.MaterialComponents.Subtitle1</item>
+    </style>
+
+    <style name="Widget.MyCarMaintenance.TextInputEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:backgroundTint">#E9E9ED</item>
+        <item name="android:paddingTop">18dp</item>
+        <item name="android:paddingBottom">18dp</item>
+        <item name="android:imeOptions">actionDone</item>
+    </style>
+
+    <style name="Widget.MyCarMaintenance.TextView2" parent="Widget.MaterialComponents.TextView">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_marginVertical">8dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Body1</item>
+        <item name="drawableEndCompat">@drawable/ic_baseline_play_arrow_24</item>
+    </style>
+</resources>
